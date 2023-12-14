@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<div class="top-bg">
+<header>
+        
+    <a href="home.html">PUPPIES' HOME</a>
+    <a href="breed.html">Breed</a>
+    <a href="care.html"><div class="item">Care Guide</div></a>
+    <a href="contact.html"><div class="item">Contact</div></a>
+</header>
+<body>
+    
+    <div class="contact-container">
+        <div class ="contact-info">
+            <p>Contact Us
+                We always love hearing from our favorite humans and their amazing pets! If you have any questions, comments or concerns, 
+                you can contact us using the form below.</p>
+        </div>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="breed">Dog Breed:</label>
+            <input type="text" id="breed" name="breed" required>
+
+            <label for="question">Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

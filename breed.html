@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Search App</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="breed.css">
+</head>
+<div class="top-bg">
+    <header>
+        
+        <a href="home.html">PUPPIES' HOME</a>
+        <a href="breed.html">Breed</a>
+        <a href="care.html"><div class="item">Care Guide</div></a>
+        <a href="contact.html"><div class="item">Contact</div></a>
+    </header>
+<body>
+
+    <div class="container">
+    
+        <div class="search-container">
+            <label for="dogName">Input Dog Name:  </label>
+            <input type="text" id="dogName" placeholder="golden retriever">
+            <button onclick="searchDog()">Search</button>
+        </div>
+    
+        <div id="result" class="result-container">
+            <div id="breed_info"></div>
+            <div style="height: 300px; overflow: hidden;">
+            <div id="img" src=""></div>
+        
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+</html>

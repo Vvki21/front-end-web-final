@@ -1,0 +1,263 @@
+
+@font-face {
+    font-family: PTSerif-Bold;
+    src: url("../fnw-final/fonts/PTSerif-Bold.ttf");
+}
+
+@font-face {
+    font-family: PTSerif-BoldItalic;
+    src: url("../fnw-final/fonts/PTSerif-BoldItalic.ttf");
+}
+
+
+@font-face {
+    font-family: PTSerif-Regular;
+    src: url("../fnw-final/fonts/PTSerif-Regular.ttf");
+}
+
+/* Larger screens */
+header {
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    font-family: PTSerif-Bold;
+}
+
+header a {
+    text-decoration: none; 
+    color: black; 
+    font-weight: bold; 
+    font-size: 20px; 
+}
+
+header a[href="home.html"] {
+    font-size: 30px; 
+}
+
+header a[href="contact.html"] {
+    position: relative;
+    background-color: #E5F5E2;
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 25px; /* Optional: Add rounded corners */
+}
+
+header a[href="contact.html"]:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+}
+
+header a:hover {
+    text-decoration: underline; /* Remove underline on hover */
+    /* You can also add additional styles for the hover state if desired */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center items horizontally */
+    }
+
+    header a {
+        margin: 5px 0;
+    }
+}
+
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    font-family: PTSerif-Bold;
+    background-color: #E5F5E2;
+   
+}
+.h2{
+    font-family: PTSerif-Bold;
+}
+
+.top-bg {
+    width: 100%;
+    height: 270px;
+    background: url('../fnw-final/img/breed.jpeg') center/cover; 
+    border: solid 0px red;
+}
+.bottom-bg{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 250px);
+    background-color: #E5F5E2;
+    
+}
+
+  
+  #breed_image {
+    background: #fff;
+    margin: 0 auto;
+    width: 460px;
+  }
+
+  .carearea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 15px 15px 15px 15px;
+    border: solid 0px red;
+}
+
+.care {
+    color: #3E5040;
+    width: 100%;
+    max-width: 100%;
+    max-height: 300px; /* Set a maximum height for each .care section */
+    overflow-y: auto; /* Enable vertical scrolling when content overflows */
+    background-color: transparent;
+    border-radius: 25px;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0 0 20px;
+    text-align: center;
+    justify-content: center;
+    transition: background-color 2s ease-out;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 30px 50px 30px 50px;
+    font-size: small;
+}
+
+.care:hover {
+    background-color: #8AB490;
+    transform: scale(1.1); 
+    transition: transform 0.3s;
+}
+
+.text-scroll {
+    overflow-y: auto;
+    flex: 1; /* Allow the text-scroll div to take up the remaining space */
+}
+
+.care-content {
+    display: block;
+}
+
+.image-container {
+    width: 280px; /* Set the fixed width for the image container */
+    overflow: hidden; /* Hide any overflow to keep the image within the container */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+.care h2 {
+    font-family: PTSerif-BoldItalic;
+}
+
+.text {
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: PTSerif-Regular;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em; /* Adjust based on your layout */
+    height:5px;
+    width:800px;
+    position: relative;
+    top: 220px; /* 你想要的垂直位置 */
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #8AB490;
+}
+
+input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #3E5040;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #133501;
+}
+
+#img {
+    background: #fff;
+    margin: 20px auto;
+    max-width: 80%; /* Set the maximum width to 100% of the container */
+    max-height: 80%; /* Set the maximum height to 100% of the container */
+    width: auto; /* Ensure the aspect ratio is maintained */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    display: block;
+
+}
+
+.result-container {
+    position: relative;
+    top: 250px; /* Adjust the vertical position as needed */
+    background: #8AB490;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 15px;
+    text-align: left;
+    transition: all 0.2s;
+    margin: 20px auto;
+    width: 700px;
+    max-height: 600px; /* Set the maximum height of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#breed_info {
+    margin-top: 1em; /* Adjust based on your layout */
+
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .search-container {
+        width: 70%;
+    }
+
+    .result-container {
+        width: 80%;
+    }
+}
